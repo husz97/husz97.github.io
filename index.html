@@ -19,8 +19,8 @@
             color: #444;
         }
         .circle {
-            width: 150px;
-            height: 150px;
+            width: 25vw; /* ใช้เปอร์เซ็นต์ของหน้าจอ */
+            height: 25vw;
             border-radius: 50%;
             background-image: url('Phu.jpg'); 
             background-size: cover;
@@ -37,13 +37,13 @@
             }
         }
         h1 {
-            font-size: 3.5em;
+            font-size: 6vw; /* ขนาดตัวอักษรตามขนาดหน้าจอ */
             margin: 0.1em 0;
             color: #ad1457;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
         p {
-            font-size: 1.3em;
+            font-size: 3vw;
             margin: 0.5em 0;
             line-height: 1.2;
         }
@@ -51,7 +51,7 @@
             display: inline-block;
             margin-top: 20px;
             padding: 12px 25px;
-            font-size: 1.1em;
+            font-size: 3vw;
             color: #fff;
             text-decoration: none;
             background-color: #ec407a;
@@ -62,6 +62,23 @@
         a:hover {
             background-color: #d81b60;
             transform: translateY(-3px);
+        }
+
+        /* Media Query สำหรับอุปกรณ์ที่หน้าจอเล็ก */
+        @media (max-width: 600px) {
+            .circle {
+                width: 40vw;
+                height: 40vw;
+            }
+            h1 {
+                font-size: 8vw;
+            }
+            p {
+                font-size: 4vw;
+            }
+            a {
+                font-size: 4vw;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
