@@ -19,8 +19,8 @@
             color: #444;
         }
         .circle {
-            width: 25vw; /* ใช้เปอร์เซ็นต์ของหน้าจอ */
-            height: 25vw;
+            width: 15vw; /* ขนาดเล็กลง */
+            height: 15vw;
             border-radius: 50%;
             background-image: url('Phu.jpg'); 
             background-size: cover;
@@ -33,25 +33,25 @@
                 transform: scale(1);
             }
             50% {
-                transform: scale(1.2);
+                transform: scale(1.1); /* ขนาดขยายเล็กน้อย */
             }
         }
         h1 {
-            font-size: 6vw; /* ขนาดตัวอักษรตามขนาดหน้าจอ */
+            font-size: 4vw; /* ขนาดตัวอักษรเล็กลง */
             margin: 0.1em 0;
             color: #ad1457;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
         p {
-            font-size: 3vw;
+            font-size: 2.5vw; /* ขนาดตัวอักษรเล็กลง */
             margin: 0.5em 0;
             line-height: 1.2;
         }
         a {
             display: inline-block;
             margin-top: 20px;
-            padding: 12px 25px;
-            font-size: 3vw;
+            padding: 10px 20px; /* ปรับขนาดปุ่ม */
+            font-size: 2.5vw; /* ขนาดตัวอักษรปุ่มเล็กลง */
             color: #fff;
             text-decoration: none;
             background-color: #ec407a;
@@ -67,17 +67,17 @@
         /* Media Query สำหรับอุปกรณ์ที่หน้าจอเล็ก */
         @media (max-width: 600px) {
             .circle {
-                width: 40vw;
-                height: 40vw;
+                width: 25vw; /* ขนาดเล็กลงเมื่อหน้าจอเล็ก */
+                height: 25vw;
             }
             h1 {
-                font-size: 8vw;
+                font-size: 6vw; /* ขนาดตัวอักษรเล็กลง */
             }
             p {
-                font-size: 4vw;
+                font-size: 3vw; /* ขนาดตัวอักษรเล็กลง */
             }
             a {
-                font-size: 4vw;
+                font-size: 3vw; /* ขนาดตัวอักษรปุ่มเล็กลง */
             }
         }
     </style>
