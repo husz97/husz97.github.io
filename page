@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love for Our Fans</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+            text-align: center;
+            color: #444;
+        }
+        .circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-image: url('your-image-url.jpg'); /* ใส่ URL ของภาพวงกลมที่ต้องการ */
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 0.5em;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+        h1 {
+            font-size: 3.5em;
+            margin: 0.1em 0;
+            color: #ad1457;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            font-size: 1.3em;
+            margin: 0.5em 0;
+            line-height: 1.2;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 1.1em;
+            color: #fff;
+            text-decoration: none;
+            background-color: #ec407a;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            background-color: #d81b60;
+            transform: translateY(-3px);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="circle"></div> <!-- รูปวงกลมที่ขยับได้ -->
+    <h1 style="font-family: 'Sarabun', sans-serif;">Husz97</h1>
+    <h1 style="margin-top: 0; font-family: 'Sarabun', sans-serif;">หนูไม่เคยได้ยินเหรอ</h1>
+    <p style="font-family: 'Sarabun', sans-serif;">ไอ้คนหล่อๆ ที่เรียนโปรแกรมเมอร์ ถ้ายังไม่เคยได้ยิน กดฟอลมาเมคในไอจีด่วนๆ เลย</p>
+    <a href="https://www.instagram.com/yourusername" target="_blank">IG : HUSZ.97</a>
+</body>
+</html>
