@@ -88,7 +88,7 @@ a{ text-decoration: none; color: black; }
 /* เปลี่ยนฟอนต์โน้ตทั้งหมดเป็น Patrick Hand */
 p{
     font-family: 'Patrick Hand', cursive;
-    font-weight: 400;
-    font-size: xx-large;
-    color: #ff2d95; /* สีชมพูหวานๆ */
+    font-size: 1.5rem; /* ปรับขนาดตามต้องการ */
+    color: #000000;    /* สีดำ */
+    margin: 0.3em 0;   /* เว้นบรรทัดเล็ก ๆ */
 }
