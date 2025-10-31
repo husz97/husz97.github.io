@@ -12,7 +12,6 @@
     z-index: -1 !important;
 }
 
-
 body {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -25,13 +24,19 @@ body {
     justify-content: center;
 }
 
+/* Paper / Note */
 .paper {
     padding: 20px 100px;
     border: 2px solid black;
     position: absolute;
     cursor: grab;
+
+    /* ใช้ภาพเดียวเต็มโน้ต */
     background-image: url('./assets/paper.jpg');
-    background-size: 100px;
+    background-size: cover;       /* ขยายเต็มพื้นที่ */
+    background-repeat: no-repeat; /* ไม่ต่อซ้ำ */
+    background-position: center;  /* อยู่ตรงกลาง */
+
     transform: rotateZ(-5deg);
     box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
     user-select: none;
@@ -84,4 +89,3 @@ p{
     font-weight: 500;
     font-size:xx-large;
 }
-
