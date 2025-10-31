@@ -1,33 +1,39 @@
-body {
+/* Background full-screen */
+.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('./assets/background.jpg');
-    background-size: cover;          /* ขยายเต็มหน้าจอ */
-    background-repeat: no-repeat;    /* ไม่ให้ภาพซ้ำ */
-    background-position: center;     /* จัดให้อยู่กลางจอ */
-    background-attachment: fixed;    /* (เลือกได้) ให้พื้นหลังนิ่งเวลาเลื่อน */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
-
 .main{
     display: flex;
     height: 90vh;
-    align-items: center;  /* column ke center mei karta hai */
-    justify-content: center;  /* row ke center mei karta hai */
+    align-items: center;
+    justify-content: center;
 }
 
 .paper {
-    padding: 100px 100px;
+    padding: 20px 100px;
     border: 2px solid black;
-    position: absolute; /* ek ke upar ek kar deta hai */
-    cursor:grab;
+    position: absolute;
+    cursor: grab;
     background-image: url('./assets/paper.jpg');
     background-size: 100px;
-    padding: 20px 100px;
     transform: rotateZ(-5deg);
     box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
     user-select: none;
-
 }
 
 .paper.paper1{
@@ -38,95 +44,29 @@ body {
     width: 200px;
     height: 200px;
     padding: 0;
-    user-select: none;
     border-radius: 50%;
-
-    
 }
+
 .paper.paper1 img{
     width: 150px;
     height: 150px;
-    user-select: none;
 }
 
-.paper.paper2{
-    z-index: 9;
-    width: 100px;
-    user-select: none;
-}
-
-.paper.paper3{
-    z-index: 8;
-    width: 300px;
-    user-select: none;
-}
-
-.paper.paper4{
-    z-index: 7;
-    width: 150px;
-    user-select: none;
-}
-
-.paper.paper5{
-    z-index: 6;
-}
-
-.paper.paper6{
-    z-index: 5;
-    width: 300px;
-    height: 300px;
-    padding:0;
-}
-
-.paper.paper6 img{
-    width: 300px;
-    height: 300px;
-}
-.paper.paper7{
-    z-index: 4;
-    width: 300px;
-    height: 350px;
-    padding:0;
-}
-
-.paper.paper7 img{
-    width: 300px;
-    height: 350px;
-}
-.paper.paper8{
-    z-index: 3;
-    width: 300px;
-    height: 350px;
-    padding:0;
-}
-
-.paper.paper8 img{
-    width: 300px;
-    height: 350px;
-}
-.paper.paper9{
-    z-index: 2;
-    width: 300px;
-    height: 350px;
-    padding:0;
-}
-
-.paper.paper9 img{
-    width: 300px;
-    height: 350px;
-}
-.paper.paper10{
-    z-index: 1;
-    width: 300px;
-    height: 350px;
-    padding:0;
-}
-
-.paper.paper10 img{
-    width: 300px;
-    height: 350px;
-}
-
+/* paper2 - paper10 */
+.paper.paper2{ z-index: 9; width: 100px; }
+.paper.paper3{ z-index: 8; width: 300px; }
+.paper.paper4{ z-index: 7; width: 150px; }
+.paper.paper5{ z-index: 6; }
+.paper.paper6{ z-index: 5; width: 300px; height: 300px; padding:0; }
+.paper.paper6 img{ width: 300px; height: 300px; }
+.paper.paper7{ z-index: 4; width: 300px; height: 350px; padding:0; }
+.paper.paper7 img{ width: 300px; height: 350px; }
+.paper.paper8{ z-index: 3; width: 300px; height: 350px; padding:0; }
+.paper.paper8 img{ width: 300px; height: 350px; }
+.paper.paper9{ z-index: 2; width: 300px; height: 350px; padding:0; }
+.paper.paper9 img{ width: 300px; height: 350px; }
+.paper.paper10{ z-index: 1; width: 300px; height: 350px; padding:0; }
+.paper.paper10 img{ width: 300px; height: 350px; }
 
 footer{
     display: flex;
@@ -136,13 +76,11 @@ footer{
     padding-bottom: 20px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
+a{ text-decoration: none; color: black; }
 
 p{
     font-family: "Zeyada", cursive;
     font-weight: 500;
     font-size:xx-large;
 }
+
