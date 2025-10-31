@@ -1,14 +1,13 @@
 body {
-    /* display: flex;
-    height: 100vh;
-    align-items: center;  /* column ke center mei karta hai */
-    /*justify-content: center;  row ke center mei karta hai */
     background-image: url('./assets/background.jpg');
-    background-size: 1000px;
-    background-position: center center;
+    background-size: cover;          /* ขยายเต็มหน้าจอ */
+    background-repeat: no-repeat;    /* ไม่ให้ภาพซ้ำ */
+    background-position: center;     /* จัดให้อยู่กลางจอ */
+    background-attachment: fixed;    /* (เลือกได้) ให้พื้นหลังนิ่งเวลาเลื่อน */
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
 
 .main{
     display: flex;
